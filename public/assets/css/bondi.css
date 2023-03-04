@@ -18,7 +18,12 @@ h6 {
   padding: 0;
 }
 
+.zooban{
+  margin-block-start:8% ;
+  margin-block-end:10.9%;
+}
 .serv-myorder {
+  
   background-color: rgb(249 249 249);
   max-width: 72%;
   color: #000000;
@@ -27,16 +32,12 @@ h6 {
 
 /*start service*/
 .service-1 {
-  background-color: #ffffff;
-  max-width: 55%;
-  border-radius: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
+
 }
 
 .service-1 .serv-img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
 }
 
 .service-1 .row .plus-row {
@@ -81,9 +82,13 @@ h6 {
 }
 
 .service-1 .serv-btn {
-
-  margin-left: 7px;
-  font-size: 15px;
+  background-color: #eee01d;
+  margin-left: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  width: 60px;
+  height: 35px;
+  padding: 0px;
 
 }
 
@@ -145,19 +150,23 @@ h6 {
 
 @media(min-width:980px) {
   .service-1 .date-hr {
-    width: 102%;
+    width: 110%;
     margin-left: -4%;
   }
 
 }
 
 @media (min-width: 575px)and(max-width :980px) {
+ 
   .service-1 .date-hr {
     width: 96%;
     margin-left: 2%;
 
   }
-
+  .home-cart {
+    width: 80px;
+    height: 50px;
+  }
   .serv-myorder {
     background-color: rgb(249 249 249);
     width: 96%;
@@ -176,13 +185,21 @@ h6 {
 /*start  media  service 0- 575 */
 @media (max-width: 575px) {
 
+  /* .zooban{
+    margin-block-start:15% ;
+    margin-block-end:50%;
+  } */
   .service-1 {
-
+    
     font-size: 12px;
-    max-width: 90%;
+    max-width: 100%;
+
 
   }
-
+  /* .service-1 .single-service{
+    width: 100px;
+    height: 100px;
+  } */
   .serv-myorder {
     background-color: rgb(249 249 249);
     max-width: 90%;
@@ -193,6 +210,10 @@ h6 {
 
   .serv-myorder h5 {
     font-size: 15px;
+  }
+
+  .dital h5{
+    font-size: 13px;
   }
 
   .service-1 .serv-btn {
@@ -220,7 +241,7 @@ h6 {
   }
 
   .service-1 .date-hr {
-    width: 85%;
+    width: 95%;
     margin-left: 12%;
   }
 }
@@ -230,20 +251,29 @@ h6 {
 
 
 .service-1 .col-row {
-
-
   padding: 0;
-
-
-
 }
 
 
 .service-1 .single-service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  position: relative;
+  border-radius: 5px;
+  background-color:#fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   margin-bottom: 30px;
   margin-top: 30px;
-
-
+}
+ .single-service:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .service-1 .row-service {
@@ -305,7 +335,7 @@ background-color: #912b2b;
 }
 
 
-icon-shape {
+.icon-shape {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -331,11 +361,11 @@ icon-shape {
 
 }
 
-body {
+/* body {
 
   color: rgb(255, 255, 255);
 
-}
+} */
 
 a {
   color: #ffffff;

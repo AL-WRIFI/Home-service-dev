@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 
-@section('title','Provider List')
+@section('title','المزودين')
 
 @push('css_or_js')
 
@@ -11,7 +11,7 @@
     <div class="main-content">
         <div class="container-fluid">
             <div class="page-title-wrap mb-30">
-                <h2 class="page-title">Provider List</h2>
+                <h2 class="page-title">قائمة المزودين</h2>
             </div>
 
             <div class="row justify-content-center">
@@ -21,7 +21,7 @@
                             <!-- Statistics Card -->
                             <div class="statistics-card statistics-card__total_provider">
                                 <h2>{{$top_cards['total_providers']}}</h2>
-                                <h3>Total Providers</h3>
+                                <h3>مجموع المزودين</h3>
                                 <img src="{{asset('public/assets/admin-module')}}/img/icons/subscribed-providers.png" class="absolute-img" alt="">
                             </div>
                             <!-- End Statistics Card -->
@@ -30,7 +30,7 @@
                             <!-- Statistics Card -->
                             <div class="statistics-card statistics-card__ongoing">
                                 <h2>{{$top_cards['total_notaccepted_providers']}}</h2>
-                                <h3>Onboarding Request</h3>
+                                <h3>يعمل الان</h3>
                                 <img src="{{asset('public/assets/admin-module')}}/img/icons/onboarding-request.png" class="absolute-img" alt="">
                             </div>
                             <!-- End Statistics Card -->
@@ -39,7 +39,7 @@
                             <!-- Statistics Card -->
                             <div class="statistics-card statistics-card__newly_joined">
                                 <h2>{{$top_cards['total_active_providers']}}</h2>
-                                <h3>Active Providers</h3>
+                                <h3>مزود نشط</h3>
                                 <img src="{{asset('public/assets/admin-module')}}/img/icons/newly-joined.png" class="absolute-img" alt="">
                             </div>
                             <!-- End Statistics Card -->
@@ -48,7 +48,7 @@
                             <!-- Statistics Card -->
                             <div class="statistics-card statistics-card__not_served">
                                 <h2>{{$top_cards['total_inactive_providers']}}</h2>
-                                <h3>Inactive Providers</h3>
+                                <h3>مزود خامل</h3>
                                 <img src="{{asset('public/assets/admin-module')}}/img/icons/not-served.png" class="absolute-img" alt="">
                             </div>
                             <!-- End Statistics Card -->
@@ -63,25 +63,25 @@
                     <li class="nav-item">
                         <a class="nav-link {{'all'?'active':''}}"
                            href="{{url()->current()}}?status=all">
-                           all
+                           الكل
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{'active'?'active':''}}"
                            href="{{url()->current()}}?status=active">
-                           active
+                           نشط
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{'inactive'?'active':''}}"
                            href="{{url()->current()}}?status=inactive">
-                           inactive
+                           خامل
                         </a>
                     </li>
                 </ul>
 
                 <div class="d-flex gap-2 fw-medium">
-                    <span class="opacity-75">Total Providers:</span>
+                    <span class="opacity-75">مجموع المزودين:</span>
                     <span class="title-color">{{$providers->count()}}</span>
                 </div>
             </div>
@@ -104,7 +104,7 @@
                                                placeholder="search here">
                                     </div>
                                     <button type="submit"
-                                            class="btn btn--primary">Search</button>
+                                            class="btn btn--primary">بحث</button>
                                 </form>
 
                                 <div class="d-flex flex-wrap align-items-center gap-3">
@@ -112,7 +112,7 @@
                                         <button type="button"
                                                 class="btn btn--secondary text-capitalize dropdown-toggle"
                                                 data-bs-toggle="dropdown">
-                                            <span class="material-icons">file_download</span> Download
+                                            <span class="material-icons">file_download</span> تحميل
                                         </button>
                                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                                             <a class="dropdown-item" href="">
@@ -128,12 +128,11 @@
                                 <table id="example" class="table align-middle">
                                     <thead class="align-middle">
                                     <tr>
-                                        <th>Provider</th>
-                                        <th>Contact Info</th>
-                                        <th>Total Subscribed Sub Categories</th>
-                                        <th>Total Orders Served</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
+                                        <th>المزود</th>
+                                        <th>معلومات التواصل</th>
+                                        <th>الطلبات المنجزة</th>
+                                        <th>الحالة</th>
+                                        <th>تحرير</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -144,7 +143,7 @@
                                                     <div class="avatar avatar-lg">
                                                         <a href="">
                                                             <img class="avatar-img radius-5"
-                                                                src="{{asset('storage/app/public/provider/logo')}}/{{$provider->image}}"
+                                                                src="{{ asset('storage/' . $provider->user->image) }}"
                                                                 onerror=""
                                                                 alt="">
                                                         </a>
@@ -152,7 +151,7 @@
                                                     <div class="media-body">
                                                         <h5 class="mb-1">
                                                             <a href="">
-                                                                {{$provider->name}}
+                                                                {{$provider->user->name}}
                                                             </a>
                                                         </h5>
                                                         <span class="common-list_rating d-flex align-items-center gap-1">
@@ -164,13 +163,9 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex flex-column">
-                                                    <h5 class="mb-1">{{Str::limit($provider->name, 30)}}</h5>
                                                     <a class="fz-12" href="mobileto:{{$provider->phone}}">{{$provider->phone}}</a>
-                                                    <a class="fz-12" href="mobileto:{{$provider->email}}">{{$provider->email}}</a>
+                                                    <a class="fz-12" href="mobileto:{{$provider->user->email}}">{{$provider->user->email}}</a>
                                                 </div>
-                                            </td>
-                                            <td>
-                                                <p>{{$provider->order_count}}</p>
                                             </td>
                                             <td>{{$provider->order_count}}</td>
                                             <td>

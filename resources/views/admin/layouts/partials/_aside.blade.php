@@ -39,41 +39,35 @@
 
         <!-- Nav -->
         <ul class="nav">
-            <li class="nav-category">Main</li>
+            <li class="nav-category">الرئيسية</li>
             <li>
                 <a href="" class="{{request()->is('admin/dashboard')?'active-menu':''}}">
                     <span class="material-icons" title="Dashboard">dashboard</span>
-                    <span class="link-title">Dashboard</span>
+                    <span class="link-title">لوحةالتحكم</span>
                 </a>
             </li>
 
            
-                <li class="nav-category" title="Service Management">Service Management</li>
+                <li class="nav-category" title="Service Management">ادارةالخدمات</li>
 
-                <li>
-                    <a href="#">
-                        <span class="material-icons" title="Service Zones">map</span>
-                        <span class="link-title">Service Zones</span>
-                    </a>
-                </li>
                 
                 <li class="has-sub-item {{(request()->is('admin/category/*') || request()->is('admin/sub-category/*'))?'sub-menu-opened':''}}">
                     <a href="#" class="{{(request()->is('admin/category/*') || request()->is('admin/sub-category/*'))?'active-menu':''}}">
                         <span class="material-icons" title="Service Categories">category</span>
-                        <span class="link-title">Service Categories</span>
+                        <span class="link-title">فئات الخدمات</span>
                     </a>
                     <!-- Sub Menu -->
                     <ul class="nav sub-menu">
                         <li>
                         <a href="{{route('categories.index')}}"
                                class="">
-                               Category List
+                               قائمة الفئات
                             </a>
                         </li>
                         <li>
                         <a href="{{route('categories.create')}}"
                                class="">
-                               Add New Category
+                               أظافة فئة
                             </a> 
                         </li>
                     </ul>
@@ -82,20 +76,20 @@
                 <li class="has-sub-item {{request()->is('admin/service/*')?'sub-menu-opened':''}}">
                     <a href="#" class="{{request()->is('admin/service/*')?'active-menu':''}}">
                         <span class="material-icons" title="">design_services</span>
-                        <span class="link-title">Services</span>
+                        <span class="link-title">الخدمات</span>
                     </a>
                     <!-- Sub Menu -->
                     <ul class="nav flex-column sub-menu">
                         <li>
                             <a href="{{route('services.index')}}"
                                class="{{request()->is('admin/service/list')?'active-menu':''}}">
-                               Service List
+                               قائمة الخدمات 
                             </a>
                         </li>
                         <li>
                             <a href="{{route('services.create')}}"
                                class="{{request()->is('admin/service/create')?'active-menu':''}}">
-                               Add New Service
+                               أظافة خدمة
                             </a>
                         </li>
                     </ul>
@@ -107,38 +101,38 @@
 
 
                 <li class="nav-category" title="Booking Management">
-                Booking Management
+                ادارة الطلبات
                 </li>
                 <li class="has-sub-item {{request()->is('admin/booking/*')?'sub-menu-opened':''}}">
                     <a href="#" class="{{request()->is('admin/booking/*')?'active-menu':''}}">
                         <span class="material-icons" title="Bookings">calendar_month</span>
-                        <span class="link-title">Bookings</span>
+                        <span class="link-title">أدارة الطلبات</span>
                     </a>
                     <!-- Sub Menu -->
                     <ul class="nav sub-menu">
                         <li><a href="{{route('orders.index')}}"
                                class="{{request()->is('admin/booking/list') && request()->query('booking_status')=='pending'?'active-menu':''}}"><span
-                                    class="link-title">Booking Requests <span
+                                    class="link-title">الطلبات <span
                                         class="count"></span></span></a>
                         </li>
                         <li><a href=""
                                class="{{request()->is('admin/booking/list') && request()->query('booking_status')=='accepted'?'active-menu':''}}"><span
-                                    class="link-title">Accepted <span
+                                    class="link-title">المقبولة <span
                                         class="count"></span></span></a>
                         </li>
                         <li><a href=""
                                class="{{request()->is('admin/booking/list') && request()->query('booking_status')=='ongoing'?'active-menu':''}}"><span
-                                    class="link-title">Ongoing <span
+                                    class="link-title">الجارية<span
                                         class="count"></span></span></a>
                         </li>
                         <li><a href=""
                                class="{{request()->is('admin/booking/list') && request()->query('booking_status')=='completed'?'active-menu':''}}"><span
-                                    class="link-title">Completed <span
+                                    class="link-title">المكتملة <span
                                         class="count"></span></span></a>
                         </li>
                         <li><a href=""
                                class="{{request()->is('admin/booking/list') && request()->query('booking_status')=='canceled'?'active-menu':''}}"><span
-                                    class="link-title">Canceled <span
+                                    class="link-title">المرفوضة <span
                                         class="count"></span></span></a>
                         </li>
                     </ul>
@@ -149,21 +143,21 @@
             
                 <li class="nav-category"
                     title="Provider Management">
-                    Provider Management
+                    أدارة المزودين
                 </li>
                 <li class="has-sub-item  {{(request()->is('admin/provider/list') || request()->is('admin/provider/create'))?'sub-menu-opened':''}}">
                     <a href="#" class="{{(request()->is('admin/provider/list') || request()->is('admin/provider/create'))?'active-menu':''}}">
                         <span class="material-icons" title="Providers">engineering</span>
-                        <span class="link-title">Providers</span>
+                        <span class="link-title">المزودين</span>
                     </a>
                     <!-- Sub Menu -->
                     <ul class="nav sub-menu">
                         <li>
                             <a href="{{route('providers.index')}}"
-                                class="{{(request()->is('admin/provider/list'))?'active-menu':''}}">Provider List</a>
+                                class="{{(request()->is('admin/provider/list'))?'active-menu':''}}">قائمة المزودين</a>
                         </li>
                         <li><a href="{{route('providers.create')}}"
-                                class="{{(request()->is('admin/provider/create'))?'active-menu':''}}">Add New Provider</a></li>
+                                class="{{(request()->is('admin/provider/create'))?'active-menu':''}}">أظافة مزود</a></li>
                     </ul>
                     <!-- End Sub Menu -->
                 </li>
@@ -172,7 +166,7 @@
                     <a href=""
                        class="{{request()->is('admin/provider/onboarding-request')?'active-menu':''}}">
                         <span class="material-icons" title="Onboarding Request">description</span>
-                        <span class="link-title">Onboarding Request <span class="count"></span></span>
+                        <span class="link-title">الطلبات الجارية<span class="count"></span></span>
                     </a>
                 </li>
       

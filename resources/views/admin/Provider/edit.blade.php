@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 
-@section('title','Update Provider')
+@section('title','تعديل مزود')
 
 @push('css_or_js')
     {{--  Int ph  --}}
@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-12 pb-4">
                     <div class="page-title-wrap mb-3">
-                        <h2 class="page-title">Update Provider</h2>
+                        <h2 class="page-title">تعديل المزود</h2>
                     </div>
 
                     <form action="{{route('providers.update',[$provider->id])}}" method="POST" enctype="multipart/form-data">
@@ -37,12 +37,12 @@
                                 <div class="card h-100">
                                     <div class="card-body">
                                         <div class="d-flex flex-wrap justify-content-between gap-3 mb-20">
-                                            <h4 class="c1 mb-20">Account Information</h4>
+                                            <h4 class="c1 mb-20">معلومات الحساب</h4>
                                         </div>
                                         <div class="form-floating mb-30">
                                             <input type="text" class="form-control" name="name"
                                                     value="{{$provider->name}}" placeholder="name" required>
-                                            <label>Name</label>
+                                            <label>الأسم</label>
                                         </div>
                                         <div class="row gx-2">
                                             <div class="col-lg-6">
@@ -50,7 +50,7 @@
                                                     <input type="tel" class="form-control" name="phone"
                                                            value="{{$provider->phone}}"
                                                            placeholder="Phone" required>
-                                                    <label>Phone</label>
+                                                    <label>الهاتف</label>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
@@ -58,7 +58,7 @@
                                                     <input type="email" class="form-control" name="email"
                                                            value="{{$provider->email}}"
                                                            placeholder="Email" required>
-                                                    <label>Email</label>
+                                                    <label>الايميل</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -67,7 +67,7 @@
                                                 <div class="form-floating mb-30">
                                                     <input type="password" class="form-control" name="password"
                                                        value="{{$provider->password}}" placeholder="Password" required>
-                                                    <label>Password</label>
+                                                    <label>كلمة المرور</label>
                                                     <span class="material-icons togglePassword">visibility_off</span>
                                                 </div>
                                             </div>
@@ -75,14 +75,14 @@
                                                 <div class="form-floating mb-30">
                                                     <input type="password" class="form-control" name="confirm_password"
                                                     value="{{$provider->password}}" placeholder="Confirm_Password" required>
-                                                    <label>Confirm Password</label>
+                                                    <label>تأكيد كلمة المرور</label>
                                                     <span class="material-icons togglePassword">visibility_off</span>
                                                 </div>
                                             </div>
                                         </div>
                                         
                                             <div class="d-flex flex-column align-items-center gap-3">
-                                                <h3 class="mb-0">Image</h3>
+                                                <h3 class="mb-0">الصورة</h3>
                                                 <div>
                                                     <div class="upload-file">
                                                         <input type="file" class="upload-file__input" name="image" >
@@ -97,7 +97,7 @@
                                                         </span>
                                                     </div>
                                                 </div>
-                                                <p class="opacity-75 max-w220 mx-auto">Image format - jpg, png,
+                                                <p class="opacity-75 max-w220 mx-auto">صسغة الصورة: - jpg, png,
                                                     jpeg,
                                                     gif Image
                                                     Size -
@@ -110,10 +110,10 @@
                             <div class="col-md-6">
                                 <div class="card h-100">
                                     <div class="card-body">
-                                        <h4 class="c1 mb-20">Provider Information</h4>
+                                        <h4 class="c1 mb-20">معلومات المزود</h4>
                                         <div class="mb-30">
                                             <select class="js-select theme-input-style w-100" name="category_id">
-                                                <option value="0" required>Choose Category</option>
+                                                <option value="0" required>المهنة</option>
                                                 @foreach($categories as $category)
                                                     <option value="{{$category->id}}" @selected($category->id == $provider->category_id)>{{$category->name}}</option>
                                                 @endforeach
@@ -122,16 +122,16 @@
                                         <div class="form-floating mb-30">
                                             <textarea class="form-control" placeholder="Address"
                                                 name="address" required>{{$provider->address}}</textarea>
-                                            <label>Address</label>
+                                            <label>العنوان</label>
                                         </div>
                                         <div class="form-floating mb-30">
                                             <textarea class="form-control" placeholder="Address"
                                                 name="description" required>{{$provider->description}}</textarea>
-                                            <label>Description</label>
+                                            <label>وصف قصير</label>
                                         </div>
                                         <div class="mb-30">
                                             <select class="select-identity theme-input-style w-100" name="identity_type" >
-                                                <option>Select_Identity_Type</option>
+                                                <option>نوع الهوية</option>
                                                 <option value="جواز سفر"
                                                     {{$provider->identity_type == 'جواز' ? 'selected': ''}}>
                                                      جواز سفر</option>
@@ -145,11 +145,11 @@
                                             <input type="text" class="form-control" name="identity_number"
                                                     value="{{$provider->identity_number}}"
                                                     placeholder="Identity_Number" >
-                                            <label>Identity Number</label>
+                                            <label>رقم الهوية</label>
                                         </div>
 
                                         <div class="upload-file w-100">
-                                            <h3 class="mb-3">Identification Image</h3>
+                                            <h3 class="mb-3">صورة الهوية</h3>
                                             <div id="multi_image_picker"></div>
                                         </div>
                                     </div>
@@ -160,7 +160,7 @@
                         <br>
                         
                         <div class="d-flex gap-4 flex-wrap justify-content-end mt-20">
-                            <button type="submit" class="btn btn--primary">UPDATE</button>
+                            <button type="submit" class="btn btn--primary">تحديث</button>
                         </div>
                     </form>
                 </div>

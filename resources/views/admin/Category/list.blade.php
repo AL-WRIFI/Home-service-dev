@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 
-@section('title','Category List')
+@section('title','الفئات')
 
 @push('css_or_js')
     
@@ -11,11 +11,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-wrap d-flex justify-content-between flex-wrap align-items-center gap-3 mb-3">
-                        <h2 class="page-title">Add New Category</h2>
+                        <h2 class="page-title">اضافه فئة</h2>
                         <div>
                             <a href="{{route('categories.create')}}" class="btn btn--primary">
                                 <span class="material-icons">add</span>
-                                Add Category
+                                اضافه فئة
                             </a>
                         </div>
                     </div>
@@ -24,25 +24,25 @@
                             <li class="nav-item">
                                 <a class="nav-link {{$status=='all'?'active':''}}"
                                    href="{{url()->current()}}?status=all">
-                                   all
+                                   الكل
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{$status=='active'?'active':''}}"
                                    href="{{url()->current()}}?status=active">
-                                   Active
+                                   نشط
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{$status=='inactive'?'active':''}}"
                                    href="{{url()->current()}}?status=inactive">
-                                   Inactive
+                                   خامل
                                 </a>
                             </li>
                         </ul>
 
                         <div class="d-flex gap-2 fw-medium">
-                            <span class="opacity-75">Total Categories:</span>
+                            <span class="opacity-75">مجموع الفئات:</span>
                             <span class="title-color">{{$categories->count()}}</span>
                         </div>
                     </div>
@@ -61,9 +61,9 @@
                                             </span>
                                                 <input type="search" class="theme-input-style search-form__input"
                                                        value="" name="search"
-                                                       placeholder="Search Here">
+                                                       placeholder="ابحث هنا">
                                             </div>
-                                            <button type="submit" class="btn btn--primary">Search</button>
+                                            <button type="submit" class="btn btn--primary">البحث</button>
                                         </form>
 
                                         <div class="d-flex flex-wrap align-items-center gap-3">
@@ -71,7 +71,7 @@
                                                 <button type="button"
                                                         class="btn btn--secondary text-capitalize dropdown-toggle"
                                                         data-bs-toggle="dropdown">
-                                                    <span class="material-icons">file_download</span> download
+                                                    <span class="material-icons">file_download</span> تحميل
                                                 </button>
                                                 <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                                                     <li><a class="dropdown-item" href="">Excel</a></li>
@@ -84,11 +84,11 @@
                                         <table id="example" class="table align-middle">
                                             <thead class="align-middle">
                                             <tr>
-                                                <th>SL</th>
-                                                <th>Category Name</th>
-                                                <th>Services count </th>
-                                                <th>Status</th>
-                                                <th>Action</th>
+                                                <th>رقم</th>
+                                                <th>أسم الفئة</th>
+                                                <th>الخدمات</th>
+                                                <th>الحالة</th>
+                                                <th>تحرير</th>
                                             </tr>
                                             </thead>
                                             <tbody>

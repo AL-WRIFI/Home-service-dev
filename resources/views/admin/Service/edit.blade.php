@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 
-@section('title',' Add Service')
+@section('title',' تعديل خدمة')
 
 @push('css_or_js')
     <link rel="stylesheet" href="{{asset('assets/admin-module')}}/plugins/select2/select2.min.css"/>
@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-wrap mb-3">
-                        <h2 class="page-title">Add New Service</h2>
+                        <h2 class="page-title">تعديل الخدمة</h2>
                     </div>
 
                     <div class="card">
@@ -33,12 +33,12 @@
                                                         <input type="text" class="form-control" name="name"
                                                                
                                                                required="" value="{{$service->name}}">
-                                                        <label>Service Name</label>
+                                                        <label>أسم الخدمة</label>
                                                     </div>
                                                 </div>
                                                 <div class="mb-30">
                                                     <select class="js-select theme-input-style w-100" name="category_id">
-                                                        <option value="0">Choose Category</option>
+                                                        <option value="0">اختر الفئة</option>
                                                         @foreach($categories as $category)
                                                             <option value="{{$category->id}}"{{$category->id==$service->category_id ? 'selected':""}}>{{$category->name}}</option>
                                                         @endforeach
@@ -47,13 +47,13 @@
                                                 <div class="form-floating flex-grow-1">
                                                 <input type="number" class="form-control" name="price"                                                       
                                                         required="" value="{{$service->price}}">
-                                                <label>Price</label>
+                                                <label>السعر</label>
                                             </div>
 
                                             </div>
                                             <div class="col-lg-3 col-sm-5 mb-5 mb-sm-0">
                                                 <div class="d-flex flex-column align-items-center gap-3">
-                                                    <p class="mb-0">image</p>
+                                                    <p class="mb-0">صورة</p>
                                                     <div>
                                                         <div class="upload-file">
                                                             <input type="file" class="upload-file__input"
@@ -69,7 +69,7 @@
                                                         </div>
                                                     </div>
                                                     <p class="opacity-75 max-w220 mx-auto">
-                                                    Image format
+                                                    صيغ الصورة:
                                                     jpg,png,
                                                      jpeg,gif
                                                     </p>
@@ -87,14 +87,14 @@
                                                     <div class="form-floating">
                                                         <textarea type="text" class="form-control"
                                                                   name="description">{{$service->description}}</textarea>
-                                                        <label>Description</label>
+                                                        <label>الوصف</label>
                                                     </div>
                                                 </div>
                                             </div>
                                     </section>
                                     <div class="col-12">
                                         <div class="d-flex justify-content-end gap-20 mt-30">
-                                            <button class="btn btn--primary" type="submit">Update</button>
+                                            <button class="btn btn--primary" type="submit">تحديث</button>
                                         </div>
                                     </div>
                             </form>

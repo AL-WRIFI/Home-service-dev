@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 
-@section('title','Category Update')
+@section('title','تعديل فئة')
 
 @push('css_or_js')
     <link rel="stylesheet" href="{{asset('assets/admin-module')}}/plugins/select2/select2.min.css"/>
@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-wrap mb-3">
-                        <h2 class="page-title">Category Update</h2>
+                        <h2 class="page-title">تعديل فئة</h2>
                     </div>
 
                     <!-- Category Setup -->
@@ -30,7 +30,7 @@
                                                 <input type="text" name="name" class="form-control"
                                                        value="{{$category->name}}"
                                                        placeholder="category_---name" required>
-                                                <label>Category Name</label>
+                                                <label>أسم الفئة</label>
                                             </div>
 
                                         </div>
@@ -41,14 +41,14 @@
                                             <div class="form-floating">
                                                 <textarea type="text" class="form-control"
                                                           name="description">{{$category->description}}</textarea>
-                                                <label>Description</label>
+                                                <label>الوصف</label>
                                             </div>
                                           </div>
                                        </div>
                                     <div class="col-lg-4">
                                         <div class="d-flex  gap-3 gap-xl-5">
                                             <p class="opacity-75 max-w220">
-                                                Image format
+                                                صيغ الصورة:
                                                  jpg,png,
                                                  jpeg,gif
                                                   
@@ -72,8 +72,8 @@
                                     <div class="col-12">
                                         <div class="d-flex justify-content-end gap-20 mt-30">
                                             <button class="btn btn--secondary"
-                                                    type="reset">Reset</button>
-                                            <button class="btn btn--primary" type="submit">Update
+                                                    type="reset">اعادة</button>
+                                            <button class="btn btn--primary" type="submit">تحديث
                                             </button>
                                         </div>
                                     </div>

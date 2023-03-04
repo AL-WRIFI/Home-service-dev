@@ -7,35 +7,35 @@ namespace Composer\Autoload;
 class ComposerStaticInit175d3f20b4bcedd54875546620a122a6
 {
     public static $files = array (
-        'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
-        '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
-        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
+        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
+        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
+        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+        '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
-        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
-        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        'f83ed111c2f97a0449abf067f157f418' => __DIR__ . '/..' . '/pestphp/pest/src/Functions.php',
-        '7d2876738dc0328edeb8a103c76cd8e7' => __DIR__ . '/..' . '/pestphp/pest/src/Pest.php',
-        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
-        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
-        '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
-        'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
+        'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         '265b4faa2b3a9766332744949e83bf97' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/helpers.php',
         'c7a3c339e7e14b60e06a2d7fcce9476b' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Events/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
-        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
-        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
-        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '40275907c8566c390185147049ef6e5d' => __DIR__ . '/..' . '/livewire/livewire/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
+        'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        'f83ed111c2f97a0449abf067f157f418' => __DIR__ . '/..' . '/pestphp/pest/src/Functions.php',
+        '7d2876738dc0328edeb8a103c76cd8e7' => __DIR__ . '/..' . '/pestphp/pest/src/Pest.php',
+        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'd634523d799d97a8ab4807b650bf5cea' => __DIR__ . '/..' . '/pestphp/pest-plugin-laravel/src/Autoload.php',
         '320163ac6b93aebe3dc25b60a0533d56' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/helpers.php',
     );
@@ -47,8 +47,13 @@ class ComposerStaticInit175d3f20b4bcedd54875546620a122a6
         ),
         'W' => 
         array (
+            'WireUi\\' => 7,
             'Whoops\\' => 7,
             'Webmozart\\Assert\\' => 17,
+        ),
+        'V' => 
+        array (
+            'Vildanbina\\LivewireWizard\\' => 26,
         ),
         'T' => 
         array (
@@ -86,6 +91,7 @@ class ComposerStaticInit175d3f20b4bcedd54875546620a122a6
             'Symfony\\Component\\ErrorHandler\\' => 31,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
+            'Spatie\\LaravelPackageTools\\' => 27,
             'Spatie\\LaravelIgnition\\' => 23,
             'Spatie\\Ignition\\' => 16,
             'Spatie\\FlareClient\\' => 19,
@@ -188,6 +194,10 @@ class ComposerStaticInit175d3f20b4bcedd54875546620a122a6
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
         ),
+        'WireUi\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wireui/wireui/src',
+        ),
         'Whoops\\' => 
         array (
             0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
@@ -195,6 +205,10 @@ class ComposerStaticInit175d3f20b4bcedd54875546620a122a6
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Vildanbina\\LivewireWizard\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vildanbina/livewire-wizard/src',
         ),
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
@@ -320,6 +334,10 @@ class ComposerStaticInit175d3f20b4bcedd54875546620a122a6
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
+        'Spatie\\LaravelPackageTools\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-package-tools/src',
+        ),
         'Spatie\\LaravelIgnition\\' => 
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-ignition/src',
@@ -358,8 +376,8 @@ class ComposerStaticInit175d3f20b4bcedd54875546620a122a6
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -477,8 +495,8 @@ class ComposerStaticInit175d3f20b4bcedd54875546620a122a6
         ),
         'Fruitcake\\Cors\\' => 
         array (
-            0 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
-            1 => __DIR__ . '/..' . '/fruitcake/laravel-cors/src',
+            0 => __DIR__ . '/..' . '/fruitcake/laravel-cors/src',
+            1 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
         ),
         'Faker\\' => 
         array (
@@ -590,6 +608,7 @@ class ComposerStaticInit175d3f20b4bcedd54875546620a122a6
         'App\\Http\\Livewire\\Order' => __DIR__ . '/../..' . '/app/Http/Livewire/Order.php',
         'App\\Http\\Livewire\\SearchForm' => __DIR__ . '/../..' . '/app/Http/Livewire/SearchForm.php',
         'App\\Http\\Livewire\\StatusForm' => __DIR__ . '/../..' . '/app/Http/Livewire/StatusForm.php',
+        'App\\Http\\Livewire\\WizardBar' => __DIR__ . '/../..' . '/app/Http/Livewire/WizardBar.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => __DIR__ . '/../..' . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
@@ -602,6 +621,7 @@ class ComposerStaticInit175d3f20b4bcedd54875546620a122a6
         'App\\Http\\Requests\\ProfileUpdateRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ProfileUpdateRequest.php',
         'App\\Models\\Category' => __DIR__ . '/../..' . '/app/Models/Category.php',
         'App\\Models\\City' => __DIR__ . '/../..' . '/app/Models/City.php',
+        'App\\Models\\Image' => __DIR__ . '/../..' . '/app/Models/Image.php',
         'App\\Models\\Message' => __DIR__ . '/../..' . '/app/Models/Message.php',
         'App\\Models\\Order' => __DIR__ . '/../..' . '/app/Models/Order.php',
         'App\\Models\\Order_ditail' => __DIR__ . '/../..' . '/app/Models/Order_ditail.php',
@@ -617,6 +637,9 @@ class ComposerStaticInit175d3f20b4bcedd54875546620a122a6
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Steps\\NameStep' => __DIR__ . '/../..' . '/app/Steps/NameStep.php',
+        'App\\Steps\\PasswordStep' => __DIR__ . '/../..' . '/app/Steps/PasswordStep.php',
+        'App\\Steps\\ServicesStep' => __DIR__ . '/../..' . '/app/Steps/ServicesStep.php',
         'App\\View\\Components\\AppLayout' => __DIR__ . '/../..' . '/app/View/Components/AppLayout.php',
         'App\\View\\Components\\GuestLayout' => __DIR__ . '/../..' . '/app/View/Components/GuestLayout.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Cors.php',
@@ -5073,6 +5096,10 @@ class ComposerStaticInit175d3f20b4bcedd54875546620a122a6
         'Spatie\\LaravelIgnition\\Support\\StringComparator' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/Support/StringComparator.php',
         'Spatie\\LaravelIgnition\\Views\\BladeSourceMapCompiler' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/Views/BladeSourceMapCompiler.php',
         'Spatie\\LaravelIgnition\\Views\\ViewExceptionMapper' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/Views/ViewExceptionMapper.php',
+        'Spatie\\LaravelPackageTools\\Commands\\InstallCommand' => __DIR__ . '/..' . '/spatie/laravel-package-tools/src/Commands/InstallCommand.php',
+        'Spatie\\LaravelPackageTools\\Exceptions\\InvalidPackage' => __DIR__ . '/..' . '/spatie/laravel-package-tools/src/Exceptions/InvalidPackage.php',
+        'Spatie\\LaravelPackageTools\\Package' => __DIR__ . '/..' . '/spatie/laravel-package-tools/src/Package.php',
+        'Spatie\\LaravelPackageTools\\PackageServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-package-tools/src/PackageServiceProvider.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\Attribute\\AsCommand' => __DIR__ . '/..' . '/symfony/console/Attribute/AsCommand.php',
@@ -5995,6 +6022,14 @@ class ComposerStaticInit175d3f20b4bcedd54875546620a122a6
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
+        'Vildanbina\\LivewireWizard\\Components\\Step' => __DIR__ . '/..' . '/vildanbina/livewire-wizard/src/Components/Step.php',
+        'Vildanbina\\LivewireWizard\\Concerns\\BelongsToLivewire' => __DIR__ . '/..' . '/vildanbina/livewire-wizard/src/Concerns/BelongsToLivewire.php',
+        'Vildanbina\\LivewireWizard\\Concerns\\HasHooks' => __DIR__ . '/..' . '/vildanbina/livewire-wizard/src/Concerns/HasHooks.php',
+        'Vildanbina\\LivewireWizard\\Concerns\\HasState' => __DIR__ . '/..' . '/vildanbina/livewire-wizard/src/Concerns/HasState.php',
+        'Vildanbina\\LivewireWizard\\Concerns\\HasSteps' => __DIR__ . '/..' . '/vildanbina/livewire-wizard/src/Concerns/HasSteps.php',
+        'Vildanbina\\LivewireWizard\\Contracts\\WizardForm' => __DIR__ . '/..' . '/vildanbina/livewire-wizard/src/Contracts/WizardForm.php',
+        'Vildanbina\\LivewireWizard\\LivewireWizardServiceProvider' => __DIR__ . '/..' . '/vildanbina/livewire-wizard/src/LivewireWizardServiceProvider.php',
+        'Vildanbina\\LivewireWizard\\WizardComponent' => __DIR__ . '/..' . '/vildanbina/livewire-wizard/src/WizardComponent.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Webmozart\\Assert\\InvalidArgumentException' => __DIR__ . '/..' . '/webmozart/assert/src/InvalidArgumentException.php',
         'Webmozart\\Assert\\Mixin' => __DIR__ . '/..' . '/webmozart/assert/src/Mixin.php',
@@ -6016,6 +6051,65 @@ class ComposerStaticInit175d3f20b4bcedd54875546620a122a6
         'Whoops\\Util\\Misc' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/Misc.php',
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
+        'WireUi\\Actions\\Actionable' => __DIR__ . '/..' . '/wireui/wireui/src/Actions/Actionable.php',
+        'WireUi\\Actions\\Dialog' => __DIR__ . '/..' . '/wireui/wireui/src/Actions/Dialog.php',
+        'WireUi\\Actions\\Minify' => __DIR__ . '/..' . '/wireui/wireui/src/Actions/Minify.php',
+        'WireUi\\Actions\\Notification' => __DIR__ . '/..' . '/wireui/wireui/src/Actions/Notification.php',
+        'WireUi\\Facades\\WireUi' => __DIR__ . '/..' . '/wireui/wireui/src/Facades/WireUi.php',
+        'WireUi\\Facades\\WireUiDirectives' => __DIR__ . '/..' . '/wireui/wireui/src/Facades/WireUiDirectives.php',
+        'WireUi\\Http\\Controllers\\ButtonController' => __DIR__ . '/..' . '/wireui/wireui/src/Http/Controllers/ButtonController.php',
+        'WireUi\\Http\\Controllers\\Controller' => __DIR__ . '/..' . '/wireui/wireui/src/Http/Controllers/Controller.php',
+        'WireUi\\Http\\Controllers\\IconsController' => __DIR__ . '/..' . '/wireui/wireui/src/Http/Controllers/IconsController.php',
+        'WireUi\\Http\\Controllers\\WireUiAssetsController' => __DIR__ . '/..' . '/wireui/wireui/src/Http/Controllers/WireUiAssetsController.php',
+        'WireUi\\Http\\Requests\\ButtonRequest' => __DIR__ . '/..' . '/wireui/wireui/src/Http/Requests/ButtonRequest.php',
+        'WireUi\\Providers\\WireUiServiceProvider' => __DIR__ . '/..' . '/wireui/wireui/src/Providers/WireUiServiceProvider.php',
+        'WireUi\\Support\\BladeCompiler' => __DIR__ . '/..' . '/wireui/wireui/src/Support/BladeCompiler.php',
+        'WireUi\\Support\\BladeDirectives' => __DIR__ . '/..' . '/wireui/wireui/src/Support/BladeDirectives.php',
+        'WireUi\\Support\\ComponentResolver' => __DIR__ . '/..' . '/wireui/wireui/src/Support/ComponentResolver.php',
+        'WireUi\\Support\\SafeEval' => __DIR__ . '/..' . '/wireui/wireui/src/Support/SafeEval.php',
+        'WireUi\\Support\\WireUiTagCompiler' => __DIR__ . '/..' . '/wireui/wireui/src/Support/WireUiTagCompiler.php',
+        'WireUi\\Traits\\Actions' => __DIR__ . '/..' . '/wireui/wireui/src/Traits/Actions.php',
+        'WireUi\\View\\Components\\Avatar' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Avatar.php',
+        'WireUi\\View\\Components\\Badge' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Badge.php',
+        'WireUi\\View\\Components\\BaseBadge' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/BaseBadge.php',
+        'WireUi\\View\\Components\\BaseButton' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/BaseButton.php',
+        'WireUi\\View\\Components\\Button' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Button.php',
+        'WireUi\\View\\Components\\Card' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Card.php',
+        'WireUi\\View\\Components\\Checkbox' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Checkbox.php',
+        'WireUi\\View\\Components\\CircleBadge' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/CircleBadge.php',
+        'WireUi\\View\\Components\\CircleButton' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/CircleButton.php',
+        'WireUi\\View\\Components\\ColorPicker' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/ColorPicker.php',
+        'WireUi\\View\\Components\\Component' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Component.php',
+        'WireUi\\View\\Components\\DatetimePicker' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/DatetimePicker.php',
+        'WireUi\\View\\Components\\Dialog' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Dialog.php',
+        'WireUi\\View\\Components\\Dropdown' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Dropdown.php',
+        'WireUi\\View\\Components\\Dropdown\\DropdownHeader' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Dropdown/DropdownHeader.php',
+        'WireUi\\View\\Components\\Dropdown\\DropdownItem' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Dropdown/DropdownItem.php',
+        'WireUi\\View\\Components\\Error' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Error.php',
+        'WireUi\\View\\Components\\Errors' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Errors.php',
+        'WireUi\\View\\Components\\FormComponent' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/FormComponent.php',
+        'WireUi\\View\\Components\\Icon' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Icon.php',
+        'WireUi\\View\\Components\\Icons\\Spinner' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Icons/Spinner.php',
+        'WireUi\\View\\Components\\Input' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Input.php',
+        'WireUi\\View\\Components\\Inputs\\BaseMaskable' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Inputs/BaseMaskable.php',
+        'WireUi\\View\\Components\\Inputs\\CurrencyInput' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Inputs/CurrencyInput.php',
+        'WireUi\\View\\Components\\Inputs\\MaskableInput' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Inputs/MaskableInput.php',
+        'WireUi\\View\\Components\\Inputs\\NumberInput' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Inputs/NumberInput.php',
+        'WireUi\\View\\Components\\Inputs\\PasswordInput' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Inputs/PasswordInput.php',
+        'WireUi\\View\\Components\\Inputs\\PhoneInput' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Inputs/PhoneInput.php',
+        'WireUi\\View\\Components\\Label' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Label.php',
+        'WireUi\\View\\Components\\Modal' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Modal.php',
+        'WireUi\\View\\Components\\ModalCard' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/ModalCard.php',
+        'WireUi\\View\\Components\\NativeSelect' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/NativeSelect.php',
+        'WireUi\\View\\Components\\Notifications' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Notifications.php',
+        'WireUi\\View\\Components\\Radio' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Radio.php',
+        'WireUi\\View\\Components\\Select' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Select.php',
+        'WireUi\\View\\Components\\Select\\Option' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Select/Option.php',
+        'WireUi\\View\\Components\\Select\\UserOption' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Select/UserOption.php',
+        'WireUi\\View\\Components\\Textarea' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Textarea.php',
+        'WireUi\\View\\Components\\TimePicker' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/TimePicker.php',
+        'WireUi\\View\\Components\\Toggle' => __DIR__ . '/..' . '/wireui/wireui/src/View/Components/Toggle.php',
+        'WireUi\\Wireui' => __DIR__ . '/..' . '/wireui/wireui/src/Wireui.php',
         'voku\\helper\\ASCII' => __DIR__ . '/..' . '/voku/portable-ascii/src/voku/helper/ASCII.php',
     );
 

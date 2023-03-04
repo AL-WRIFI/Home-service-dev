@@ -5,6 +5,8 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ProviderController;
 use App\Http\Livewire\Home;
+use App\Http\Livewire\UserWizard;
+use App\Http\Livewire\Alwrifi;
 use App\Http\Livewire\Order;
 use App\Http\livewire\ShowService;
 use App\Http\Controllers\ProfileController;
@@ -53,9 +55,11 @@ Route::any('status_update/{id}', [ProviderController::class,'status_update'])->n
 //Route::get('/services/{id}', App\Http\Livewire\ShowService::class);
 //Route::get('/home', Home::class);
 
-Route::get('/home', App\Http\Livewire\Home::class);
+Route::get('/home', Home::class);
+Route::get('/test', Alwrifi::class);
 Route::get('/category/{category_id}/show_services', App\Http\Livewire\Order::class)->name('show_services');
 
 Route::get('/category/{category_id}/show_services', App\Http\Livewire\Checkout::class)->name('select_services');
+//Route::get('/category/{category_id}/show_services', App\Http\Livewire\UserWizard::class)->name('select_services');
 
 require __DIR__.'/auth.php';

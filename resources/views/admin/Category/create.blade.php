@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 
-@section('title','Add New Category')
+@section('title','اضافة فئة')
 
 @push('css_or_js')
     <link rel="stylesheet" href="{{asset('assets/admin-module')}}/plugins/select2/select2.min.css"/>
@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-wrap mb-3">
-                        <h2 class="page-title">Add New Category</h2>
+                        <h2 class="page-title">أضافة فئة</h2>
                     </div>
 
                     <!-- Category Setup -->
@@ -29,7 +29,7 @@
                                                 <input type="text" name="name" class="form-control"
                                                        value="{{old('name')}}"
                                                        placeholder="category_name" required>
-                                                <label>Category Name</label>
+                                                <label>اسم الفئة</label>
                                             </div>
                                         </div>
                                     </div>
@@ -38,7 +38,7 @@
                                             <div class="form-floating">
                                                 <textarea type="text" class="form-control"
                                                           name="description">{{old('description')}}</textarea>
-                                                <label>Description</label>
+                                                <label>الوصف</label>
                                             </div>
                                           </div>
                                    </div>
@@ -46,7 +46,7 @@
                                         <div class="d-flex  gap-3 gap-xl-5">
                                             
                                             <p class="opacity-75 max-w220">
-                                                image_format
+                                                صيغ الصورة:
                                                 _-_jpg,_png,
                                                 _jpeg,_gif_image
     
@@ -68,8 +68,8 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="d-flex justify-content-end gap-20 mt-30">
-                                            <button class="btn btn--secondary" type="reset">Reset</button>
-                                            <button class="btn btn--primary" type="submit">Submit</button>
+                                            <button class="btn btn--secondary" type="reset">اعادة</button>
+                                            <button class="btn btn--primary" type="submit">أضافة</button>
                                         </div>
                                     </div>
                                 </div>

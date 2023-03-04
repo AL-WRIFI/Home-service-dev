@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 
-@section('title','Service list')
+@section('title','الخدمات')
 
 @push('css_or_js')
     <link rel="stylesheet" href="{{asset('assets/admin-module')}}/plugins/dataTables/jquery.dataTables.min.css"/>
@@ -13,11 +13,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-wrap d-flex justify-content-between flex-wrap align-items-center gap-3 mb-3">
-                        <h2 class="page-title">Service list</h2>
+                        <h2 class="page-title">قائمة الخدمات</h2>
                         <div>
                             <a href="{{route('services.create')}}" class="btn btn--primary">
                                 <span class="material-icons">add</span>
-                                Add Service
+                                اضافة خدمة
                             </a>
                         </div>
                     </div>
@@ -29,25 +29,25 @@
                                 
                             <a class="nav-link {{$status=='all'?'active':''}}"
                                    href="{{ URL::current() }}?status=all">
-                                   all
+                                   الكل
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{$status=='active'?'active':''}}"
                                    href="{{ URL::current() }}?status=active">
-                                   Active
+                                   نشط
                                 </a>
                             </li>
                             <li class="nav-item">
                             <a class="nav-link {{$status=='inactive'?'active':''}}"
                                    href="{{URL::current()}}?status=inactive">
-                                   Inactive
+                                   خامل
                                 </a>
                             </li>
                         </ul>
 
                         <div class="d-flex gap-2 fw-medium">
-                             <span class="opacity-75">Total Service:</span>
+                             <span class="opacity-75">مجموع الخدمات:</span>
                             <span class="title-color">{{$services->count()}}</span>
                         </div>
                     </div>
@@ -67,9 +67,9 @@
                                             </span>
                                                 <input type="search" class="theme-input-style search-form__input"
                                                        value="{{ $search }}" name="search"
-                                                       placeholder="Search Here">
+                                                       placeholder="ابحث هنا">
                                             </div>
-                                            <button type="submit" class="btn btn--primary">Search</button>
+                                            <button type="submit" class="btn btn--primary">البحث</button>
                                         </form>
                                         
                                         <div class="d-flex flex-wrap align-items-center gap-3">
@@ -77,7 +77,7 @@
                                                 <button type="button"
                                                         class="btn btn--secondary text-capitalize dropdown-toggle"
                                                         data-bs-toggle="dropdown">
-                                                    <span class="material-icons">file_download</span> download
+                                                    <span class="material-icons">file_download</span> تحميل
                                                 </button>
                                                 <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                                                     <li><a class="dropdown-item" href="">Excel</a></li>
@@ -91,11 +91,11 @@
                                         <table id="example" class="table align-middle">
                                             <thead >
                                             <tr>
-                                                <th>SL</th>
-                                                <th>Name</th>
-                                                <th>category </th>
-                                                <th>Status</th>
-                                                <th>Action</th>
+                                                <th>رقم</th>
+                                                <th>الأسم</th>
+                                                <th>الفئة </th>
+                                                <th>الحالة</th>
+                                                <th>تحرير</th>
                                             </tr>
                                             </thead>
                                             <tbody>

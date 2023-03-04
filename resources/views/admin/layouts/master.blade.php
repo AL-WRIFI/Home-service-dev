@@ -19,12 +19,22 @@
           href=""/>
 
     <!-- Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
-        rel="stylesheet">
-
+        rel="stylesheet"> --}}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+        <style>
+         
+         body{
+            font-family: 'Cairo', sans-serif;
+         }
+    
+        </style>
 
     <!-- ======= BEGIN GLOBAL MANDATORY STYLES ======= -->
     <link href="{{asset('assets/admin-module')}}/css/material-icons.css" rel="stylesheet">
@@ -46,10 +56,10 @@
     <!-- ======= END MAIN STYLES ======= -->
 
     @stack('css_or_js')
-    @livewireStyles
+
 </head>
 
-<body>
+<body style=" font-family: 'Cairo', sans-serif; font-size:15px">
 <!-- Offcanval Overlay -->
 <div class="offcanvas-overlay"></div>
 <!-- Offcanval Overlay -->
@@ -97,7 +107,7 @@
 
 <!-- ======= END **AUTO RUNNABLE** SCRIPTS ======= -->
 @stack('script')
-@livewireScripts
+
 
 
 <!-- ======= End BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS ======= -->

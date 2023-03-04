@@ -65,8 +65,6 @@ class ProviderController extends Controller
         $data =$request->except('image');
         $data['image'] = $this->uploadImgae($request);
         $pro_use= User::create($data);
-        $varx =$pro_use->id;
-        //dd($varx);
         Provider::create([
             'user_id'=>$pro_use->id,
             'phone'=> $request->phone,
